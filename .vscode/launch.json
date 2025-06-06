@@ -1,0 +1,51 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ReservationSystemGUI",
+      "request": "launch",
+      "mainClass": "gui.ReservationSystemGUI",
+      "projectName": "OnlineReservationSystem_6ab38ee5"
+    },
+    {
+      "type": "java",
+      "name": "Run All JUnit Tests",
+      "request": "launch",
+      "console": "internalConsole",
+      "classPaths": [
+        "out",
+        "lib/junit-jupiter-api-5.9.2.jar",
+        "lib/junit-jupiter-engine-5.9.2.jar",
+        "lib/junit-platform-console-standalone-1.9.2.jar",
+        "lib/junit-platform-launcher-1.9.2.jar"
+      ],
+      "mainClass": "org.junit.platform.console.ConsoleLauncher",
+      "args": [
+        "--classpath",
+        "out",
+        "--scan-classpath"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Run Specific Test Class",
+      "request": "launch",
+      "console": "internalConsole",
+      "classPaths": [
+        "out",
+        "lib/junit-jupiter-api-5.9.2.jar",
+        "lib/junit-jupiter-engine-5.9.2.jar",
+        "lib/junit-platform-console-standalone-1.9.2.jar",
+        "lib/junit-platform-launcher-1.9.2.jar"
+      ],
+      "mainClass": "org.junit.platform.console.ConsoleLauncher",
+      "args": [
+        "--classpath",
+        "out",
+        "--select-class",
+        "test.ReservationServiceTest"
+      ]
+    }
+  ]
+}
